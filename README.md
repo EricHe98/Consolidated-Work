@@ -8,7 +8,7 @@ Due to data volume and problem complexity, search result ranking is one of the m
 ### Concepts
 As ranking is a less-discussed data science problem, I self-learned the specialized training procedure underpinning the LambdaMART models. This involved detailed analysis of the behavior of the standard ranking metric, **normalized discounted cumulative gain**, and understanding the philosophy of **preference pairs** behind **listwise ranking models**. Because many standard sampling strategies would bias the model (e.g. against gross margin), I came up with a custom **sampling strategy** to define which search results to keep in the training dataset. To validate the model, I used a **game-theoretic** framework called **SHAP values** to decompose model scores into the contributions given by each training feature.
 
-## Tools and Languages
+### Tools and Languages
 I used the **Python xgboost package** to build the LambdaMART model. The **shap** library was used to audit the model. To process the training dataset, I rewrote all queries to run using **Spark** on **AWS EMR**. I am currently working on a real-time deployment using **AWS Sagemaker** for model endpoint hosting, **Redis** for feature caching, and **AWS Lambda** for event-driven API responses.
 
 ## Rocketmiles Fraud Model (January 2018 - June 2018)
