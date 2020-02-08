@@ -1,6 +1,10 @@
-# Hello World
+# About Me
 
-My name is Eric and I am a senior at New York University with a business (stats concentration) and math double major and a minor in computer science. I’m currently interning at Rocketmiles, an e-commerce company selling hotel room-nights, on the data science team, where I've worked on various projects such as designing/deploying fraud models and ranking search results. Previously, I worked on quantitative trading research with Professor Vasant Dhar, and transfer learning using neural nets at Gyrfalcon Technology, a start-up working on Tensor Processing Units (TPUs). The projects discussed are some of the work I have done while in these positions.
+- I work as a data scientist at Rocketmiles. We sell hotel rooms online, and give you back gift cards, airline miles or reward points for booking with us.
+- On the machine learning side, I focus on ranking and pricing. Check out my [ranking blog posts](https://medium.com/rocket-travel/measuring-the-business-value-of-a-hotel-ranking-model-c4396531b26e) to see what sort of work I do here.
+- On the data engineering side, I focus on model latency and monitorability. 
+- I'm currently doing a master's degree at the NYU Center for Data Science (2019-present). My undergraduate degree was also at NYU (2015-2019), with a business major at the Stern business school, and a math major and computer science minor at the Courant mathematical institute.
+- I give a little bit more color on some of the work I have done below.
 
 ## Rocketmiles Search Result Ranking Model (August 2018 - Present)
 Due to data volume and problem complexity, search result ranking is one of the most ambitious machine learning projects an e-commerce company can take on. However, good search result rankings are critical to the customer experience, and upgraded algorithms have been shown at companies such as [Airbnb](https://arxiv.org/abs/1810.09591) to create tremendous lift in customer conversion rates. I prototyped a gradient boosting tree model for ranking called **LambdaMART**, which required me to come up with custom data sampling strategies to serve the use case. To productionize the model, I used big data infrastructure and a modern realtime model deployment stack built on Amazon Web Services. We are currently working on deploying the search result model for live A/B testing.
